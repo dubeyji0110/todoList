@@ -1,0 +1,20 @@
+.item{
+    display: flex;
+    width: 100%;
+    background: #7adff3;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background: #44d5f1;
+}
+
+.item__name{
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}

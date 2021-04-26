@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadein;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__header{
+    background: #90e0ef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fx{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.max__width{
+    width: 100%;
+    max-width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* overflow-y: auto; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fd-c{
+    flex-direction: column !important;
+    overflow: scroll;
+    max-height: 82vh;
+    scrollbar-width: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #036991;    
+    border-radius: 50px;
+}
+
+.startup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.goaway{
+    animation-name: fade;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1;
+        z-index: 100;
+    }
+    to{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+h1 > p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-top: 5px;
 }
