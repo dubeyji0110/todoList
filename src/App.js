@@ -46,7 +46,7 @@ function App() {
 			.onSnapshot((snapshot) => {
 				setTask(snapshot.docs.map((doc) => ({
 					id: doc.id,
-					data: doc.data()
+					...doc.data()
 				})));
 			});
 	}, []);
@@ -69,7 +69,7 @@ function App() {
 			<div className='app__body'>
 				<div className='max__width fd-c'>
 					{task.map((t) => (
-						<Item task={t.data.task} deleteItem={deleteItem} id={t.id} />
+						<Item task={t.task} deleteItem={deleteItem} id={t.id} />
 					))}
 				</div>
 			</div>
