@@ -1,7 +1,7 @@
 # Getting Started with TODO Web
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Whatsapp Clone developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and deployed on firebase.
+TODO Web App developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and deployed on firebase.
 
 ## Available Scripts
 
@@ -42,8 +42,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone https://github.com/dubeyji0110/whatsapp-clone.git
-$ cd whatsapp-clone
+$ git clone https://github.com/dubeyji0110/todoList.git
+$ cd todoList/
 ```
 
 To install and set up the library, run:
