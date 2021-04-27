@@ -73,6 +73,7 @@ function App() {
 					))}
 				</div>
 			</div>
+			<footer><p>Made with 💖 by Devansh Dubey</p></footer>
 		</div>
 	) : (
 		<div className='startup' id='start' onClick={(e) => fade(e)}>
