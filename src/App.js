@@ -44,10 +44,12 @@ function App() {
 		db.collection("tasks")
 			.orderBy("timestamp", "asc")
 			.onSnapshot((snapshot) => {
-				setTask(snapshot.docs.map((doc) => ({
-					id: doc.id,
-					...doc.data()
-				})));
+				setTask(
+					snapshot.docs.map((doc) => ({
+						id: doc.id,
+						...doc.data(),
+					}))
+				);
 			});
 	}, []);
 
@@ -73,7 +75,9 @@ function App() {
 					))}
 				</div>
 			</div>
-			<footer><p>Made with 💖 by Devansh Dubey</p></footer>
+			<footer>
+				<p>Made with 💖 by Devansh Dubey</p>
+			</footer>
 		</div>
 	) : (
 		<div className='startup' id='start' onClick={(e) => fade(e)}>
