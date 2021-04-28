@@ -7,7 +7,7 @@ import firebase from "firebase";
 
 function App() {
 	const [item, setItem] = useState("");
-	const [flag, setFlag] = useState(true);
+	const [flag, setFlag] = useState(false);
 	const [task, setTask] = useState([]);
 
 	const fade = (e) => {
