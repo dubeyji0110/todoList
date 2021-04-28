@@ -7,7 +7,7 @@ import firebase from "firebase";
 
 function App() {
 	const [item, setItem] = useState("");
-	const [flag, setFlag] = useState(false);
+	const [flag, setFlag] = useState(true);
 	const [task, setTask] = useState([]);
 
 	const fade = (e) => {
@@ -57,15 +57,15 @@ function App() {
 		<div className='app'>
 			<div className='app__header'>
 				<div className='max__width'>
-					<div className='fx'>
+					<form className='fx'>
 						<Input
 							type='text'
 							value={item}
 							onChange={(e) => setItem(e.target.value)}
 							style={{ flex: "1" }}
 						/>
-						<Button onClick={(e) => addItem(e)}>ADD ITEM</Button>
-					</div>
+						<Button type='submit' onClick={(e) => addItem(e)}>ADD ITEM</Button>
+					</form>
 				</div>
 			</div>
 			<div className='app__body'>
