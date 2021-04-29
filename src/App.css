@@ -37,9 +37,9 @@
 .fd-c{
     flex-direction: column !important;
     overflow-y: scroll;
-    max-height: 82vh;
-    margin: auto;
+    max-height: 81vh;
     scrollbar-width: 3px;
+    margin: 10px auto;
 }
 
 ::-webkit-scrollbar{

@@ -22,6 +22,7 @@ function App() {
 		e.preventDefault();
 		db.collection("tasks").add({
 			task: item,
+			isChecked: false,
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 		});
 		setItem("");
@@ -71,7 +72,7 @@ function App() {
 			<div className='app__body'>
 				<div className='max__width fd-c'>
 					{task.map((t) => (
-						<Item task={t.task} deleteItem={deleteItem} id={t.id} />
+						<Item task={t.task} deleteItem={deleteItem} id={t.id} isChecked={t.isChecked} />
 					))}
 				</div>
 			</div>

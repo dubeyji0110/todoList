@@ -12,7 +12,7 @@
 }
 
 .item.checked{
-    background: #8bb4bc;
+    background: #7ab2bd;
     color: #707070;
     text-decoration: line-through;
 }
@@ -38,7 +38,7 @@
 }
 
 .item.checked:hover{
-    background: #8bb4bc;
+    background: #7ab2bd;
 }
 
 .item:hover{
