@@ -20,12 +20,14 @@ function App() {
 
 	const addItem = (e) => {
 		e.preventDefault();
-		db.collection("tasks").add({
-			task: item,
-			isChecked: false,
-			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-		});
-		setItem("");
+		if (item) {
+			db.collection("tasks").add({
+				task: item,
+				isChecked: false,
+				timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+			});
+			setItem("");
+		}
 	};
 
 	const deleteItem = (id) => {
